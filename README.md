@@ -2,12 +2,15 @@
 
 📊 Corporate EV Analytics Pipeline on AWS
 
+
+
 📌 Overview
 
 This project demonstrates a corporate-style data analytics pipeline built on AWS using real-world EV market data.
 It covers data ingestion, querying, analytics optimization, and BI-ready modeling using cloud-native services.
 
 The goal was to simulate how data analysts use AWS in production environments for dashboard-driven decision making.
+
 
 
 🔧 Technologies Used
@@ -23,6 +26,7 @@ Parquet – Columnar analytics storage
 SQL – Data transformation & KPI modeling
 
 
+
 📂 Dataset
 
 Source: IEA Global EV Data (2024)
@@ -30,6 +34,7 @@ Source: IEA Global EV Data (2024)
 Format: CSV
 
 Granularity: Region × Year × Powertrain × Metric
+
 
 
 🧠 Key Concepts Demonstrated
@@ -46,6 +51,7 @@ Reusable analytics tables for multiple dashboards
 
 
 
+
 🚀 Why Parquet?
 
 Columnar storage → faster analytics
@@ -57,6 +63,7 @@ Dashboard-friendly schema
 Scalable for multiple KPIs and dashboards
 
 
+
 🎯 Outcome
 
 Built an end-to-end AWS analytics pipeline
@@ -64,6 +71,7 @@ Built an end-to-end AWS analytics pipeline
 Designed BI-optimized Parquet tables
 
 Simulated real corporate data workflows
+
 
 
 🔮 Future Improvements
@@ -77,10 +85,13 @@ QuickSight dashboards
 ML forecasting on EV sales trends
 
 
+
 📬 Contact
 
 Dhruv Pandey
+
 MSc Data Science & AI
+
 Aspiring Data Analyst / Data Scientist
 
 
