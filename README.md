@@ -1,6 +1,7 @@
 # aws-ev-analytics-pipeline
 
 📊 Corporate EV Analytics Pipeline on AWS
+
 📌 Overview
 
 This project demonstrates a corporate-style data analytics pipeline built on AWS using real-world EV market data.
@@ -20,6 +21,7 @@ Amazon Athena – Serverless SQL analytics
 Parquet – Columnar analytics storage
 
 SQL – Data transformation & KPI modeling
+
 
 📂 Dataset
 
