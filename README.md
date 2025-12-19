@@ -8,7 +8,7 @@ It covers data ingestion, querying, analytics optimization, and BI-ready modelin
 
 The goal was to simulate how data analysts use AWS in production environments for dashboard-driven decision making.
 
-🏗️ Architecture
+📌 Architecture
 Raw CSV (S3)
      ↓
 AWS Glue (Schema Discovery)
@@ -18,6 +18,7 @@ Amazon Athena (SQL Analytics)
 Optimized Parquet Analytics Tables (S3)
      ↓
 BI Layer (QuickSight-ready / Athena queries)
+
 
 🔧 Technologies Used
 
