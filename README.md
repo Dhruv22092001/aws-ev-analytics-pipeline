@@ -1,114 +1,91 @@
-# aws-ev-analytics-pipeline
+🚗📊 From Raw EV Data to Executive Dashboards on AWS
 
-📊 Corporate EV Analytics Pipeline on AWS
+How do data analysts actually use AWS in the real world?
+This project answers that question by building a production-style analytics pipeline using real global EV market data.
 
+🧠 The Idea
 
+Instead of treating AWS as a collection of services, this project treats it as a business analytics platform.
 
-📌 Overview
+The goal was simple:
 
-This project demonstrates a corporate-style data analytics pipeline built on AWS using real-world EV market data.
-It covers data ingestion, querying, analytics optimization, and BI-ready modeling using cloud-native services.
+Turn messy raw CSV data into fast, dashboard-ready insights — the same way it’s done in corporate environments.
 
-The goal was to simulate how data analysts use AWS in production environments for dashboard-driven decision making.
+🏗️ What This Project Demonstrates
 
-
-
-🔧 Technologies Used
-
-Amazon S3 – Data lake (raw + analytics zones)
-
-AWS Glue – Data catalog & schema management
-
-Amazon Athena – Serverless SQL analytics
-
-Parquet – Columnar analytics storage
-
-SQL – Data transformation & KPI modeling
-
-
+✔ How raw data is stored in an S3 data lake
+✔ How schemas are managed using AWS Glue
+✔ How analysts query large datasets using Amazon Athena
+✔ Why companies convert CSV data into Parquet analytics tables
+✔ How cloud data is consumed by BI tools like Power BI
 
 📂 Dataset
 
-Source: IEA Global EV Data (2024)
+Source: International Energy Agency (IEA) – Global EV Data 2024
 
-Format: CSV
+Scope: Global EV sales, stock, and powertrain metrics
 
 Granularity: Region × Year × Powertrain × Metric
 
+🧩 Key Design Decisions (Corporate Thinking)
+Why External Tables?
 
+Raw data stays untouched in S3
 
-🧠 Key Concepts Demonstrated
+Safe, scalable querying
 
-Raw vs Analytics data separation
+Why Parquet?
 
-External tables vs managed Hive tables
+- Columnar storage → faster queries
 
-Athena cost optimization using Parquet
+- Lower Athena scan costs
 
-KPI-focused analytics modeling
+- Designed for dashboards & KPIs
 
-Reusable analytics tables for multiple dashboards
+- Why Separate Analytics Tables?
 
+- One optimized table → many dashboards
 
+- No repeated heavy calculations
 
+- BI tools stay fast and responsive
 
-🚀 Why Parquet?
+📊 Example Insight
 
-Columnar storage → faster analytics
+EV Sales Growth by Year
 
-Reduced data scanned → lower Athena cost
+SELECT
+  year,
+  SUM(value) AS total_ev_sales
+FROM ev_market_analytics
+WHERE metric = 'EV sales'
+GROUP BY year
+ORDER BY year;
 
-Dashboard-friendly schema
+🎯 What I Learned
 
-Scalable for multiple KPIs and dashboards
+- How cloud data lakes are structured
 
+- Why analytics optimization matters more than raw querying
 
+- How BI tools interact with cloud data
 
-🎯 Outcome
+- How to think like a corporate data analyst, not just write SQL
 
-Built an end-to-end AWS analytics pipeline
+🔮 Possible Next Steps
 
-Designed BI-optimized Parquet tables
+- Partition Parquet tables by year
 
-Simulated real corporate data workflows
+- Automate ingestion with AWS Lambda
 
+- Add forecasting models for EV adoption
 
+- Deploy QuickSight dashboards
 
-🔮 Future Improvements
-
-Partitioned Parquet tables by year
-
-Automated ingestion via AWS Lambda
-
-QuickSight dashboards
-
-ML forecasting on EV sales trends
-
-
-
-📬 Contact
+👋 About Me
 
 Dhruv Pandey
-
 MSc Data Science & AI
-
 Aspiring Data Analyst / Data Scientist
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+📫 Open to analytics & data roles involving cloud, BI, and real-world datasets.
