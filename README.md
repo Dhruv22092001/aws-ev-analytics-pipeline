@@ -84,8 +84,8 @@ ORDER BY year;
 
 👋 About Me
 
-Dhruv Pandey
-MSc Data Science & AI
-Aspiring Data Analyst / Data Scientist
+- Dhruv Pandey
+- MSc Data Science & AI
+- Aspiring Data Analyst 
 
 📫 Open to analytics & data roles involving cloud, BI, and real-world datasets.
